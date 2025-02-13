@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/*Funcion principal*/
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
