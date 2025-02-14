@@ -9,8 +9,11 @@ int main(void)
 
 	do {
 		putchar(numero);
-		putchar(',');
-		putchar(' ');
+		if (numero != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		numero++;
 	} while (numero <= 57);
 	putchar('\n');
