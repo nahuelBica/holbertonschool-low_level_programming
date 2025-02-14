@@ -7,11 +7,10 @@ int main(void)
 {
 	char letra = 97;
 
-	while (letra <= 122)
-	{
+	do {
 		putchar(letra);
 		putchar('\n');
 		letra++;
-	}
+	} while (letra <= 122);
 	return (0);
 }
