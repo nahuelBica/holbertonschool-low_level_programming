@@ -8,7 +8,7 @@ int main(void)
 	char letra = 97;
 
 	do {
-		if (letra != 'q' || letra != 'e')
+		if (letra != 'q' && letra != 'e')
 			putchar(letra);
 		letra++;
 	} while (letra <= 122);
