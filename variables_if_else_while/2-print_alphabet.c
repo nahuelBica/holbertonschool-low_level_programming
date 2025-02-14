@@ -9,8 +9,8 @@ int main(void)
 
 	do {
 		putchar(letra);
-		putchar('\n');
 		letra++;
 	} while (letra <= 122);
+	putchar('\n');
 	return (0);
 }
