@@ -4,11 +4,11 @@
  */
 void print_alphabet(void)
 {
-	char letra = 97;
+	char letra = 'a';
 
 	do {
 		_putchar(letra);
 		letra++;
-	} while (letra <= 122);
+	} while (letra <= 'z');
 	_putchar('\n');
 }
