@@ -7,7 +7,8 @@ void print_alphabet(void)
 	char letra = 97;
 
 	do {
-		_putchar ('a');
+		_putchar(letra);
 		letra++;
 	} while (letra <= 122);
+	_putchar('\n');
 }
