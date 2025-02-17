@@ -5,8 +5,9 @@
 void print_alphabet(void)
 {
 	char letra = 'a';
+	int contador = 1;
 
-	for (int contador = 1; contador <= 10; contador++)
+	for (contador; contador <= 10; contador++)
 	{
 		do {
 			_putchar(letra);
