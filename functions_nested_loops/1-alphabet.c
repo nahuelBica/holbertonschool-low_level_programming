@@ -8,5 +8,6 @@ void print_alphabet(void)
 
 	do {
 		_putchar (letra);
+		letra++;
 	} while (letra <= 122);
 }
