@@ -1,13 +1,7 @@
 #include <stdio.h>
 /**
- * main - entry point
- * Return: if 0 is success
+ * print_alphabet - print the alphabet
  */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 void print_alphabet(void)
 {
 	int letra = 97;
