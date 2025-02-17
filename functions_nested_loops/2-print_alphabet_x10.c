@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_alphabet - print the alphabet
+ * print_alphabet_x10 - print the alphabet ten times
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	char letra;
 	int contador = 1;
