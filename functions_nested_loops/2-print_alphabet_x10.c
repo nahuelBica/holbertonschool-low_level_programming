@@ -4,15 +4,17 @@
  */
 void print_alphabet(void)
 {
-	char letra = 'a';
+	char letra;
 	int contador = 1;
 
-	for (contador; contador <= 10; contador++)
+	while (contador < 10)
 	{
+		letra = 'a';
 		do {
 			_putchar(letra);
 			letra++;
 		} while (letra <= 'z');
 		_putchar('\n');
+		contador++;
 	}
 }
