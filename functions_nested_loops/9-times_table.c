@@ -13,7 +13,7 @@ void times_table(void)
 			resultado = a * b;
 			if (resultado <= 9)
 			{
-				if (resultado > 0)
+				if (resultado > 0 && a != 0)
 					_putchar(' ');
 			} else
 			{
