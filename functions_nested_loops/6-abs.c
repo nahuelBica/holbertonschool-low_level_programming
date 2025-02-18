@@ -2,8 +2,8 @@
 /**
  *_abs - print abs of a number
  *
- * @n: parameter that obtain a number
- Return: n if is positive or zero, -n if is negative
+ *@n: parameter that obtain a number
+ *Return: n if is positive or zero, -n if is negative
 */
 int _abs(int n)
 {
