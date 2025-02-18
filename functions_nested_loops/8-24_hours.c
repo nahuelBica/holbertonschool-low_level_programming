@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *jack_bauer - p
+ *jack_bauer - print the hours and minutes of the day
  *
  *Return: last digit of number
 */
