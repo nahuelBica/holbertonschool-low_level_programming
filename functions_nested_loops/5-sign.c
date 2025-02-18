@@ -17,6 +17,9 @@ int print_sign(int n)
 	{
 		_putchar('+');
 		resultado = +1;	
+	} else
+	{
+		_putchar('0');
 	}
 	return (resultado);
 }
