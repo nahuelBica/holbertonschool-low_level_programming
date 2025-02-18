@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *print_sign - check if c is lowercase
+ *print_sign - check if number is positive or negative
  *
  * @n: parameter that obtain a number
  *Return: 1 if is positive, 0 if zero, -1 if negative

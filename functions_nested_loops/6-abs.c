@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *print_sign - check if c is lowercase
+ *_abs - print abs of a number
  *
  * @n: parameter that obtain a number
- *Return: 1 if is positive, 0 if zero, -1 if negative
+ Return: n if is positive or zero, -n if is negative
 */
 int _abs(int n)
 {
