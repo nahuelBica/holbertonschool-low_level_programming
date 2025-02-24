@@ -20,7 +20,7 @@ void print_triangle(int size)
 			{
 				_putchar(' ');
 			}
-		if (size != 1)
+		if (aux != 1)
 			_putchar('\n');
 		c++;
 		aux--;
