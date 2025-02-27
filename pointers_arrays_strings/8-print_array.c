@@ -9,6 +9,10 @@ void print_array(int *a, int n)
 {
 	int cont;
 
+	if (n <= 0)
+	{
+		printf("\n");
+	}
 	for (cont = 0; cont < n; cont++)
 	{
 		if (cont + 1 != n)
