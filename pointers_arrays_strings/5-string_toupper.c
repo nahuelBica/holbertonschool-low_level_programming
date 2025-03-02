@@ -2,7 +2,7 @@
 /**
  * _*string_toupper - change to upper
  *@s: string
- *Return: length of string s
+ *Return: s
  */
 char *string_toupper(char *s)
 {
