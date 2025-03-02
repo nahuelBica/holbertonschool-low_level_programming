@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strncat - cat string src after dest
+ * *_strncat - cat n values of string src after dest
  *@dest: destination
  *@src: source
  *@n: max length of src
