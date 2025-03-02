@@ -13,6 +13,8 @@ char *cap_string(char *s)
 	{
 		if (s[n] <= 'z' && s[n] >= 'a')
 		{
+			if (n == 0)
+				s[n] -= 32;
 			for (i = 0; pool[i] != 0; i++)
 				s[n] = s[n - 1] == pool[i] ? s[n] - 32 : s[n];
 		}
