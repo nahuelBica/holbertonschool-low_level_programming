@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * *_strchr - search char in a string
  *@s: string
@@ -19,5 +20,5 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
-	return (check == 1 ? o : 0);
+	return (check == 1 ? o : NULL);
 }
