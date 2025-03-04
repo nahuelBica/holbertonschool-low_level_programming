@@ -8,21 +8,23 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int c = 0, i, find = 0;
-	/*c = cont while, recorre el 1er str, i = cont for, recorre el 2do str*/
+	int c, s = 0, check;
 
-	while (haystack[c])
+	while (needle[s] != 0)
+		s++;
+
+	while (haystack)
 	{
-		for (i = 0; needle[i] != 0; i++)
+		check = 1;
+		for (c = 0; needle[c] != 0 && check; c++)
 		{
-			if (haystack[c + i] == needle[i])
-				find = 1;
-			else
-				find = 0;
+			if (haystack[c] != needle[c])
+				check = 0;
 		}
-		if (find)
-			return (haystack + c);
-		c++;
+		if (c != s)
+			haystack++;
+		else
+			return (haystack);
 	}
 	return (NULL);
 }
