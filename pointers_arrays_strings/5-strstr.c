@@ -1,30 +1,43 @@
 #include "main.h"
 #include <stddef.h>
+#include <stdio.h>
+
 /**
  * *_strstr - search string in string
- *@haystack: string
- *@needle: string
- *Return: pointer
+ * @haystack: string
+ * @needle: string
+ * Return: pointer
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int c, s = 0, check;
+	int lenHay = 0, lenNeed = 0, cont = 0, aux, check = 1;
 
-	while (needle[s] != 0)
-		s++;
+	printf("Antes del 1er while");
+	while (haystack[lenHay + 1] != 0)
+		lenHay++;
+	printf("Antes del 2do while");
+	while (needle[lenNeed + 1] != 0)
+		lenNeed++;
 
-	while (haystack)
+	printf("Antes del tercer while lenNeed %d", lenNeed);
+	while (lenHay > lenNeed)
 	{
-		check = 1;
-		for (c = 0; needle[c] != 0 && check; c++)
-		{
-			if (haystack[c] != needle[c])
+		printf("Antes del for lenNeed %d", lenNeed);
+		for (aux = 0; needle[aux] != 0 && check; aux++)
+		{		
+			printf("Antes del if aux %d, lenNeed %d", aux, lenNeed);
+			if (haystack[aux] != needle[aux])
 				check = 0;
+			printf("despues del if aux %d, lenNeed %d", aux, lenNeed);
 		}
-		if (c != s)
-			haystack++;
-		else
-			return (haystack);
+			printf("aux %d, lenNeed %d", aux, lenNeed);
+		if (aux == lenNeed)
+		{
+			printf("desde aux == lenNeed");
+			return (haystack + cont);
+		}
+		cont++;
+		lenHay--;
 	}
 	return (NULL);
 }
