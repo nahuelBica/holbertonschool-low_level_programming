@@ -15,12 +15,12 @@ char *_strstr(char *haystack, char *needle)
 		lenHay++;
 	while (needle[lenNeed] != 0)
 		lenNeed++;
-	while (lenHay > lenNeed)
+	while (lenHay >= lenNeed && haystack[cont])
 	{
 		check = 1;
 		for (aux = 0; needle[aux] != 0 && check; aux++)
 		{
-			if (haystack[aux] != needle[aux])
+			if (haystack[cont + aux] != needle[aux])
 				check = 0;
 		}
 		if (aux == lenNeed)
