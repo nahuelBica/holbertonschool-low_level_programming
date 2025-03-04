@@ -11,9 +11,9 @@ char *_strstr(char *haystack, char *needle)
 {
 	int lenHay = 0, lenNeed = 0, cont = 0, aux, check = 1;
 
-	while (haystack[lenHay + 1] != 0)
+	while (haystack[lenHay] != 0)
 		lenHay++;
-	while (needle[lenNeed + 1] != 0)
+	while (needle[lenNeed] != 0)
 		lenNeed++;
 	while (lenHay > lenNeed)
 	{
