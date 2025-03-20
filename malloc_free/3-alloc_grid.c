@@ -20,6 +20,15 @@ int **alloc_grid(int width, int height)
 	while (ln < height)
 	{
 		ar[ln] = malloc(width * sizeof(int));
+		if (ar[ln] == 0)
+		{
+			while (ln >= 0)
+			{
+				free(ar[ln]);
+				ln--;
+			}
+			return (0);
+		}
 		while (col < width)
 		{
 			ar[ln][col] = 0;
