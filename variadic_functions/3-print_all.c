@@ -29,8 +29,9 @@ void print_all(const char * const format, ...)
 			break;
 		case 's':
 			string = va_arg(ar, char*);
-			if (string)
-				printf("%s", string);
+			if (!string)
+				string = "(nil)";
+			printf("%s", string);
 			break;
 		default:
 			find = 0;
