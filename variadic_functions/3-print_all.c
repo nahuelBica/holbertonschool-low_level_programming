@@ -23,12 +23,8 @@ void print_all(const char * const format, ...)
 	int find;
 	unsigned int cont = 0;
 
-	if (!format)
-	{
-		return;
-	}
 	va_start(ar, format);
-	while (format[cont])
+	while (format && format[cont])
 	{
 		find = 1;
 		switch (format[cont])
