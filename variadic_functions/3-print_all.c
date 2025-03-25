@@ -2,6 +2,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
+ * print_separator - print separator
+ * @last: is last?
+ * @find: is finded?
+ */
+void print_separator(char last, char find)
+{
+	if (last && find)
+		printf(", ");
+}
+
+/**
  * print_all - print all
  * @format: list of formats
 */
@@ -12,6 +23,10 @@ void print_all(const char * const format, ...)
 	int find;
 	unsigned int cont = 0;
 
+	if (!format)
+	{
+		return;
+	}
 	va_start(ar, format);
 	while (format[cont])
 	{
@@ -37,8 +52,7 @@ void print_all(const char * const format, ...)
 			find = 0;
 			break;
 		}
-		if (format[cont + 1] && find)
-			printf(", ");
+		print_separator(format[cont + 1], find);
 		cont++;
 	}
 	printf("\n");
